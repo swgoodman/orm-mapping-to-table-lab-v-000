@@ -38,6 +38,7 @@ class Student
   end
 
   def self.create(student)
+    student = self.new
     sql = <<-SQL
     INSERT INTO students (id, name, grade) VALUES (?, "#{@name}", "#{@grade}")
     SQL
