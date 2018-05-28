@@ -16,4 +16,8 @@ class Student
     SQL
     DB[:conn].execute(sql)
   end
+
+  def drop_table(id)
+
+  end
 end
