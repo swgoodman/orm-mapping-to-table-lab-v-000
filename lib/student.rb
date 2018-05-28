@@ -38,7 +38,7 @@ class Student
   end
 
   def self.create(student)
-    student = self.new(name:, grade:)
+    student = self.new(name, grade)
     sql = <<-SQL
     INSERT INTO students (id, name, grade) VALUES (?, "#{@name}", "#{@grade}")
     SQL
